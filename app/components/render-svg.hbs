@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800px" height="600px" viewBox="0 0 80 60">
+  {{#each @rects as |rec|}}
+    {{#if rec.noise}}
+      <rect fill="Black" x={{rec.x}} y={{rec.y}} width="1px" height="1px" />
+    {{else}}
+      <rect fill="White" x={{rec.x}} y={{rec.y}} width="1px" height="1px" />
+    {{/if}}
+  {{/each}}
+</svg>
